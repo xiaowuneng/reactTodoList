@@ -1,12 +1,19 @@
-import {CHANGE_INPUT_VALUE, ADD_TODO_ITEM, DELETE_TODO_ITEM} from './actiontypes'
-export const getChangeInputValueAction = (value) => ({
-  type: CHANGE_INPUT_VALUE,
-  value
-})
-export const getAddTodoItemAction = () => ({
-  type: ADD_TODO_ITEM
-})
-export const getDeleteTodoItemAction = (index) => ({
-  type: DELETE_TODO_ITEM,
-  index
-})
+import { INPUT_CHANGE, ADD_ITEM, DELETE_ITEM } from './constants'
+
+export const getInputChangeAction = (value) => {
+  return {
+    type: INPUT_CHANGE,
+    value
+  }
+}
+export const getAddItemAction = () => {
+  return {
+    type: ADD_ITEM
+  }
+}
+export const getDeleteItemAction = (index) => {
+  return {
+    type: DELETE_ITEM,
+    index
+  }
+}
